@@ -1,0 +1,106 @@
+@import "../../../../../../themes/theme.scss";
+.add_call_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  margin: 1rem;
+  padding: 1rem;
+
+  align-self: flex-start;
+  .info_row {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0.1rem;
+    margin-top: 0.5rem;
+
+    align-items: flex-start;
+
+    // align-items: center;
+
+    text-transform: capitalize;
+    color: $color-secondary-txt;
+
+    .label {
+      align-items: center;
+      justify-content: flex-start;
+      display: flex;
+
+      flex: 0.1;
+      text-transform: capitalize;
+
+      color: $color-secondary-txt;
+
+      padding: 0rem;
+      margin: 0rem;
+
+      font-size: 1rem;
+
+      // flex: 0.3;
+      // width: 10.6rem;
+    }
+
+    .value {
+      align-items: center;
+      justify-content: flex-start;
+      display: flex;
+      flex: 1;
+      font-weight: 500;
+
+      margin-left: 0.5rem;
+      outline: none;
+      color: $color-primary-txt;
+
+      border-color: $color-border;
+
+      border-width: 0.1rem;
+      padding-left: 0.5rem;
+
+      font-size: 0.9rem;
+
+      min-height: 12vh;
+    }
+    .value:disabled {
+      background: $color-background;
+      color: $color-secondary-txt;
+    }
+
+    @media screen and (max-width: 570px) {
+      flex: 1;
+
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+  .row1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .checkboxContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    align-items: center;
+
+    .checkbox {
+      color: $color-accent;
+    }
+    .checkbox_label {
+      margin-left: 0.4rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+//for error input
+.error {
+  margin: 0rem;
+  padding: 0rem;
+  margin-left: 1rem;
+
+  color: $color-error;
+}

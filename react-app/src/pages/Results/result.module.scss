@@ -1,0 +1,25 @@
+.container {
+  @import "../../../../themes/theme.scss";
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  .table {
+    border: none;
+    .toolbar {
+      flex: 1;
+      color: $color-accent;
+      padding: 0.5rem;
+      margin: 0.2rem;
+      justify-content: center;
+      // background: $color-accent;
+    }
+
+    .header {
+      color: $color-accent;
+    }
+    .cell {
+      color: $color-secondary-txt;
+    }
+  }
+}
